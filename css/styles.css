@@ -431,7 +431,6 @@ body {
   gap: 72px;
 }
 .our-team-list-item {
-  /* min-width: 264px; */
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
@@ -498,10 +497,9 @@ body {
   .our-team-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     column-gap: 24px;
     row-gap: 64px;
+    padding: 0 92px;
   }
   .our-team-list-item {
     width: calc((100% - 24px) / 2);
@@ -512,6 +510,11 @@ body {
 @media screen and (min-width: 1158px) {
   .our-team {
     padding: 120px 0;
+  }
+  .our-team-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+    padding: 0;
   }
   .our-team-list-item {
     width: calc((100% - 3 * 24px) / 4);
@@ -644,7 +647,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  margin-left: 102px;
+  margin-left: 86px;
   margin-bottom: 16px;
 }
 
@@ -719,7 +722,7 @@ body {
 
 .footer-form-input-email {
   display: block;
-  width: 264px;
+  width: 288px;
   height: 40px;
   background-color: transparent;
   border-radius: 4px;
@@ -743,8 +746,6 @@ body {
   min-width: 165px;
   height: 40px;
   padding: 8px 24px;
-  justify-content: center;
-  align-items: center;
   border-radius: 4px;
   background-color: #4d5ae5;
   font-family: "Roboto", sans-serif;
@@ -756,6 +757,7 @@ body {
   color: #ffffff;
   cursor: pointer;
   border: none;
+  margin: 0 auto;
 }
 .footer-form-btn-icon {
   margin-left: 16px;
